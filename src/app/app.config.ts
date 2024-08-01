@@ -19,6 +19,6 @@ export const appConfig: ApplicationConfig = {
       provideStorage(() => getStorage()),
       provideMessaging(() => getMessaging())
     ),
-    provideRouter(routes)
+    provideRouter(routes), provideFirebaseApp(() => initializeApp({"projectId":"gdsc-kabarak-codelab","appId":"1:830944198842:web:fd361f51486a7716518283","storageBucket":"gdsc-kabarak-codelab.appspot.com","locationId":"us-central","apiKey":"AIzaSyBRqO9xpx7BO0gaJLBQp_LYa-S8RqYQWTo","authDomain":"gdsc-kabarak-codelab.firebaseapp.com","messagingSenderId":"830944198842"})), provideAuth(() => getAuth()), provideFirestore(() => getFirestore()), provideMessaging(() => getMessaging()), provideStorage(() => getStorage())
   ],
 };
